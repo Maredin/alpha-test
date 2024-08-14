@@ -85,8 +85,19 @@ managmentBtn.addEventListener('click', (e) => {
     getVallue(managmentSelectItem, managmentBtn, managmentDrag, managmentIcon)
 });
 
+managmentIcon.addEventListener('click', (e) => {
+    togleClass(managmentDrag, managmentIcon);
+    getVallue(managmentSelectItem, managmentBtn, managmentDrag, managmentIcon)
+});
+
+
 requestBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    togleClass(requestDrag, requestIcon);
+    getVallue(requestSelectItem, requestBtn, requestDrag, requestIcon)
+});
+
+requestIcon.addEventListener('click', (e) => {
     togleClass(requestDrag, requestIcon);
     getVallue(requestSelectItem, requestBtn, requestDrag, requestIcon)
 });

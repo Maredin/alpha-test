@@ -27,7 +27,7 @@ li {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding-top: 180px;
+    padding-top: clamp(3.125rem, 2.5rem + 3.13vw, 5.625rem);
     padding-left: clamp(0.625rem, -1.008rem + 7.26vw, 6.25rem);
     padding-right: clamp(0.625rem, -1.008rem + 7.26vw, 6.25rem);
 }
@@ -439,6 +439,12 @@ li {
         line-height: 143%;
     }
 
+}
+
+@media (max-width: 420px) {
+    .pagecrm_managment__crm-application-select {
+        width: 100%;
+    }
 }
 
 
